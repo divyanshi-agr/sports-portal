@@ -90,16 +90,17 @@ img:hover{
     line-height: 1.3;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
 #img2{
+    flex: 3;
     float: left;
     width: 500px;
     height: 500px;
 
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
 }
 
 .p2{
@@ -107,8 +108,7 @@ img:hover{
     font-family: 'Slabo 27px', serif;
     font-size: 21px;
     margin-top: 50px;
-    margin-left: 100px;
-    
+    margin-left: 100px;    
     letter-spacing: 1px;
     line-height: 1.3;     
 }
