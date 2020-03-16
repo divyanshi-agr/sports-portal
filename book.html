@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a booking</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .form{
+            padding: 30px;
+            margin: 25px;
+            font-size: 25px;
+        }
+
+        button{
+            margin-left: 20px;
+            position: relative;
+            margin-top: 30px;
+            padding: 10px 30px;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script type="text/javascript">
+        const showmsg=()=>{
+            alert('Your booking has been made!')
+        }
+    </script>
+</head>
+<body>
+
+    <div class="form">
+     <div>
+        <label>Enter your first name:</label>
+        <input type="text" name="first-name" />
+      </div>
+      <br />
+      <div>
+        <label>Enter your last name:</label>
+        <input type="text" name="last-name" />
+      </div>
+      <br />
+      <div>
+        <label>Enter your team name:</label>
+        <input type="text" name="team-name" />
+      </div>
+      <br />
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label>Enter time:</label>
+        <input type="time" name="time" />
+      </div>
+      <br/>
+      <div>
+        <label>Phone:</label>
+        <input type="text" name="phone" />
+      </div>
+      <!-- <div>
+          <input type="submit" value="submit" onclick="showmsg()">
+      </div> -->
+      
+      <div>
+          <button onclick="showmsg()">Confirm booking</button>
+      </div>
+
+    </div>
+
+</body>
+</html>

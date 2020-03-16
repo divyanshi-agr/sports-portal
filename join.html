@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Team</title>
+    <style>
+        
+        .form{
+            padding: 30px;
+            margin: 25px;
+            font-size: 25px;
+        }
+    </style>
+    <script type="text/javascript">
+        function showDiv() {
+        document.getElementById('disp').style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="form">
+        <div>
+            <label>Enter your name:</label>
+            <input type="text" name="name" />
+        </div>
+        <div id="disp"  style="display:none;" class="answer_list" > 
+            <p>Please select your team:</p>
+            <input type="radio" id="guy1" name="guy1" value="John-doe">
+            <label for="guy1">abc1</label><br>
+            <input type="radio" id="guy2" name="guy2" value="Erwin-howell">
+            <label for="guy2">abc2</label><br>
+            <input type="radio" id="guy3" name="guy3" value="Leanne-graham">
+            <label for="guy3">abc3</label><br>
+            <input type="radio" id="guy4" name="guy4" value="Patricia-lebsack">
+            <label for="guy4">abc4</label><br>
+            <input type="radio" id="guy5" name="guy5" value="Chelsey-dietrich">
+            <label for="guy5">abc5</label><br>
+            <input type="radio" id="guy6" name="guy6" value=" Dennis-schulist">
+            <label for="guy6"> abc6</label><br>
+            <input type="radio" id="guy7" name="guy7" value="Jack-doe">
+            <label for="guy7">abc7</label><br>
+            <input type="radio" id="guy8" name="guy8" value="Kurtis-weissnat">
+            <label for="guy8">abc8 </label><br><br>
+            <input type="submit" value="Submit"> <br><br>
+        </div>
+
+        <input type="button" name="answer" value="CREATE" onclick="showDiv()" />
+
+    </div>
+
+</body>
+</html>
+

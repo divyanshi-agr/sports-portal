@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+ul{
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;   
+    text-transform: uppercase;
+    display: flex;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s;
+   
+}
+
+a:hover{
+    color: #706c61;
+   
+}
+
+a:active{
+    text-decoration: none;
+    color: mediumorchid;
+}
+
+li{ 
+    padding: 25px;
+}
+
+hr{
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    height: 25px;
+    width: 1px;
+    margin-top: 20px;
+
+}
+
+.sportHeading{
+    margin-top: 100px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    
+}
+
+.cards{
+    margin-left: 100px; 
+    margin-top: 30px; 
+   display: grid;
+   grid-template-columns: 30vw 30vw 30vw;
+   grid-gap: 30px;
+}
+
+.card{
+    background-color: white;
+    width: 65%;
+    height: 250px;
+    border-radius: 8px;    
+    align-self: center;
+    box-shadow: 2px 2px 6px black;
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h3{
+    text-align: center;
+    margin-top: 15px;
+}
+
+h3 a{
+    color: black;
+    font-style: bold;
+}
+
+h3 a:hover{
+    color: lightslategrey;
+    transition: 0s;
+}
