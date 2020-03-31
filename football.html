@@ -7,10 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="football.css">
+    <script type="text/javascript">
+        const showDiv = () => {
+            document.getElementById('disp').style.display = "block";
+            document.getElementById('joinTeam').style.display = "none";
+        }
+
+        const showTeam = () => {
+            document.getElementById('show-team').style.display = "block";
+        }
+    </script>
+
+   
     
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar">
             <ul class="list1">
                 <li><a href="index.html">Home</a></li>
@@ -31,21 +43,64 @@
                 <li><a href="#">Sign Up</a></li>
             </ul>
         </nav>            
-    </header>
+    </header> -->
 
     <main>
 
-        <div class="bookdirect">
+        <div class="split left">
+            <div class="centered">
+              <h2>Don't have a team yet? Create one!</h2>
+              <br>
+              <button id="createTeam"  style="font-weight: 700">CREATE</button>
+               
+            </div>
+          </div>
+          
+          <div class="split right">
+            <div class="centered">
+              <h2>Want to join an existing team?</h2>
+              <br>
+              <div id="disp"  style="display:none;" class="answer_list" > 
+                <p>Following are the registered teams, please select one:</p>
+                <input type="radio" id="guy1" name="guy1">
+                <label for="guy1">abc1</label><br>
+                <input type="radio" id="guy2" name="guy1">
+                <label for="guy2">abc2</label><br>
+                <input type="radio" id="guy3" name="guy1">
+                <label for="guy3">abc3</label><br>
+                <input type="radio" id="guy4" name="guy1">
+                <label for="guy4">abc4</label><br>
+                <input type="radio" id="guy5" name="guy1">
+                <label for="guy5">abc5</label><br><br>
+                <button id="Done" style="padding:5px;" onclick="showTeam()">Done</button><br>
+              </div>
+              <input type="button" id="joinTeam" name="answer" style="font-weight: 700" value="JOIN" onclick="showDiv()" />
+            </div>
+          </div>
+
+          <div id="show-team" style="display:none;">
+            <h3>Team abc</h3>
+            <p>LALA</p>
+
+          </div>
+
+
+
+
+
+
+        <!-- <div class="bookdirect">
             <h3>Already have a team?  Book your ground here!</h3> 
             <a href="book.html"><button style="font-weight: 700" id="bookfont">BOOK</button></a>
             <br><br><br>     
             <p>Don't have a team yet? Select any one!</p>    
-            <a href="create.html"><button id="createTeam"  style="font-weight: 700">CREATE TEAM</button></a>
-            <a href="join.html"><button id="joinTeam"  style="font-weight: 700">JOIN TEAM</button></a>
+            <a href="create.html"></a>
+            <a href="join.html"></a>
             
         </div>
-        
+         -->
     </main>
 
+    
 </body>
 </html>

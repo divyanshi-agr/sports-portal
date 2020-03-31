@@ -13,7 +13,7 @@ main{
 }
 
 
-.navbar{
+/* .navbar{
     
     display: flex;
     justify-content: space-between;
@@ -59,43 +59,60 @@ hr{
     height: 25px;
     width: 1px;
     margin-top: 20px;
-}
+} */
 
-h3{
-    margin-top: 100px;
-    margin-left: 250px;
-    font-weight: 50; 
-       
-}
-
-.bookdirect{   
-    font-family: 'Slabo 27px', serif;
-    font-size: 30px;
-    font-weight: 90;
-    font-style: inherit; 
-        
-}
-
-button{
-    margin-left: 320px;
-    position: relative;
-    margin-top: 30px;
-    padding: 20px 50px;
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #111;
+    color: white;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
     background-color: white;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #createTeam {
+      border-radius: 15px;
+      padding: 12px;
+      border-color: white;
+      background-color: black;
+      color: white
+  }
+
+  #joinTeam {
+    border-radius: 15px;
+    padding: 12px;
     border-color: black;
-    border-radius: 25px;
-    cursor: pointer;
-    
-}
-#bookfont{
-    margin-left: 550px;
-}
+    background-color: white;
+    color: black;
+  }
 
-button:hover{
-    text-decoration: underline;
-}
-
-p{
-    margin-left: 50px;
-}
+  #show-team {
+      box-sizing: border-box;
+      border-color: black;
+      border-radius: 5px;
+      background-color: chocolate;
+  }
 

@@ -22,7 +22,7 @@
     <div class="form">
         <div>
            <label>Enter your first name:</label>
-           <input type="text" name="first-name" />
+           <input type="text" name="first-name" required autofocus/>
          </div>
          <br />
          <div>
@@ -38,7 +38,7 @@
 
          <div id="disp"  style="display:none;" class="answer_list" > 
             <h3>Individual players:</h3>
-            <input type="checkbox" id="guy1" name="guy1" value="John-doe">
+            <input type="checkbox" id="guy1" name="guy1" value="John-doe" >
             <label for="guy1">John doe</label><br>
             <input type="checkbox" id="guy2" name="guy2" value="Erwin-howell">
             <label for="guy2">Erwin howell</label><br>
@@ -54,9 +54,9 @@
             <label for="guy7">Jack doe</label><br>
             <input type="checkbox" id="guy8" name="guy8" value="Kurtis-weissnat">
             <label for="guy8">Kurtis weissnat </label><br><br>
-            <input type="submit" value="Submit"> <br><br><br>
-                                        
+            <input type="submit" value="Submit"> <br><br>                                        
         </div>
+
          <input type="button" name="answer" value="CREATE" onclick="showDiv()" />
 
 </body>
