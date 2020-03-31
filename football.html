@@ -7,16 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="football.css">
-    <script type="text/javascript">
-        const showDiv = () => {
-            document.getElementById('disp').style.display = "block";
-            document.getElementById('joinTeam').style.display = "none";
-        }
-
-        const showTeam = () => {
-            document.getElementById('show-team').style.display = "block";
-        }
-    </script>
+    
 
    
     
@@ -51,7 +42,7 @@
             <div class="centered">
               <h2>Don't have a team yet? Create one!</h2>
               <br>
-              <button id="createTeam"  style="font-weight: 700">CREATE</button>
+              <input type="button" id="createTeam" name="answer" style="font-weight: 700" value="CREATE" onclick="showDivCreate()" />
                
             </div>
           </div>
@@ -72,10 +63,11 @@
                 <label for="guy4">abc4</label><br>
                 <input type="radio" id="guy5" name="guy1">
                 <label for="guy5">abc5</label><br><br>
-                <button id="Done" style="padding:5px;" onclick="showTeam()">Done</button><br>
+                
               </div>
-              <input type="button" id="joinTeam" name="answer" style="font-weight: 700" value="JOIN" onclick="showDiv()" />
+              <input type="button" id="joinTeam" name="answer" style="font-weight: 700" value="JOIN" onclick="showDivJoin()" />
             </div>
+            <button id="Done" style="padding:5px;" onclick="showTeam()">Done</button><br>
           </div>
 
           <div id="show-team" style="display:none;">
@@ -100,6 +92,24 @@
         </div>
          -->
     </main>
+
+    <script type="text/javascript">
+        const showDivJoin = () => {
+            document.getElementById('disp').style.display = "block";
+            document.getElementById('joinTeam').style.display = "none";
+        }
+
+        const showTeam = () => {
+            document.getElementById('show-team').style.display = "block";
+           // document.getElementById('disp').style.display = "none";
+        }
+
+        const showDivCreate = () => {
+            document.getElementById('create').style.display = "block";
+            document.getElementById('createTeam').style.display = "none";
+        }
+
+    </script>
 
     
 </body>
