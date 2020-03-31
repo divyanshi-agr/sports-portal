@@ -1,17 +1,15 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    font-family: 'Slabo 27px', serif;
-    
+body {
+    font-family: "Slabo 27px", serif;
 }
 
-main{
+main {
     margin: 20px;
 }
-
 
 /* .navbar{
     
@@ -69,50 +67,50 @@ hr{
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  .left {
+}
+
+/* Control the left side */
+.left {
     left: 0;
     background-color: #111;
     color: white;
-  }
-  
-  /* Control the right side */
-  .right {
+}
+
+/* Control the right side */
+.right {
     right: 0;
     background-color: white;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  #createTeam {
-      border-radius: 15px;
-      padding: 12px;
-      border-color: white;
-      background-color: black;
-      color: white
-  }
+}
 
-  #joinTeam {
+#createTeam {
+    border-radius: 15px;
+    padding: 12px;
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+#joinTeam {
     border-radius: 15px;
     padding: 12px;
     border-color: black;
     background-color: white;
     color: black;
-  }
+}
 
-  #show-team {
-      box-sizing: border-box;
-      border-color: black;
-      border-radius: 5px;
-      background-color: chocolate;
-  }
-
+#show-team {
+    box-sizing: border-box;
+    border-color: black;
+    border-radius: 5px;
+    width: 100%;
+    background-color: chocolate;
+}
