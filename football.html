@@ -1,87 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookFootball</title>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="football.css">
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BookFootball</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="football.css" />
+        
+    </head>
+    <body></body>
 
-   
-    
-</head>
-<body>
-    <!-- <header>
-        <nav class="navbar">
-            <ul class="list1">
-                <li><a href="index.html">Home</a></li>
-                <hr>
-                <li><a href="#">About Us</a></li>
-                <hr>
-                <li><a href="bookings.html">Bookings</a></li>
-                <hr>
-                <li><a href="#">Enroll</a></li>
-                <hr>
-                <li><a href="#">Schedules</a></li>
-                <hr>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <ul class="list2">
-                <li><a href="#">Login</a></li>
-                <hr>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </nav>            
-    </header> -->
-
-    <main>
-
-        <div class="split left">
-            <div class="centered">
-              <h2>Don't have a team yet? Create one!</h2>
-              <br>
-              <input type="button" id="createTeam" name="answer" style="font-weight: 700" value="CREATE" onclick="showDivCreate()" />
-               
+        <main>
+            <div class="split left">
+                <div class="centered">
+                    <h2 class="line">Don't have a team yet? Create one!</h2>
+                    <br />
+                    <div id="disp1" style="display:none" >
+                        <div class="inp">
+                            <label for="name">Enter name: </label><p></p>
+                            <input type="text" id="name" placeholder="Your name" name="name" required><br>
+                        </div>
+                        <div class="inp">
+                            <label for="email">Enter email: </label><p></p>
+                            <input type="text" id="email" placeholder="Your email" name="email" required><br>
+                        </div>
+                        <div class="inp">
+                            <label for="team">Enter team-name: </label><p></p>
+                            <input type="text" id="team-name" placeholder="Your team name" name="team-name" required><br>
+                        </div>
+                        <div class="inp">
+                            <label for="no.">Enter contact no.: </label><p></p>
+                            <input type="text" id="phone" placeholder="Your number" name="no." required><br> 
+                        </div> 
+                        
+                        <button type="submit" class="btnc" onclick="alert('You have created a team! Wish you luck Captain!!')">Create</button>
+                        <button type="button" class="cancel" onclick="closeTeam()">Close</button>
+         
+                    </div>
+                    <input
+                        type="button"
+                        id="createTeam"
+                        name="create"
+                        style="font-weight: 700"
+                        value="CREATE"
+                        onclick="showDiv1()"
+                    />
+                </div>
             </div>
-          </div>
-          
-          <div class="split right">
-            <div class="centered">
-              <h2>Want to join an existing team?</h2>
-              <br>
-              <div id="disp"  style="display:none;" class="answer_list" > 
-                <p>Following are the registered teams, please select one:</p>
-                <input type="radio" id="guy1" name="guy1">
-                <label for="guy1">abc1</label><br>
-                <input type="radio" id="guy2" name="guy1">
-                <label for="guy2">abc2</label><br>
-                <input type="radio" id="guy3" name="guy1">
-                <label for="guy3">abc3</label><br>
-                <input type="radio" id="guy4" name="guy1">
-                <label for="guy4">abc4</label><br>
-                <input type="radio" id="guy5" name="guy1">
-                <label for="guy5">abc5</label><br><br>
-                
-              </div>
-              <input type="button" id="joinTeam" name="answer" style="font-weight: 700" value="JOIN" onclick="showDivJoin()" />
+
+            <div class="split right">
+                <div class="centered">
+                    <h2>Want to join an existing team?</h2>
+                    <br />
+                    <div id="disp" style="display:none;" >
+                        <p>
+                            Following are the registered teams, please select
+                            one:
+                        </p>
+                        <div class="list-group">
+                            <div class="rad">
+                                <input type="radio" id="guy1" class="list-group-item" name="guy1" value="abc1"/>
+                                <label for="guy1">abc1</label><br />
+                            </div>
+                            <div class="rad">
+                                <input type="radio" id="guy1" class="list-group-item" name="guy1" value="abc2" />
+                                <label for="guy2">abc2</label><br />
+                            </div>
+                            <div class="rad">
+                                <input type="radio" id="guy1" class="list-group-item" name="guy1" value="abc3"/>
+                                <label for="guy3">abc3</label><br />
+                            </div>
+                            <div class="rad">
+                                <input type="radio" id="guy1" class="list-group-item" name="guy1" value="abc4" />
+                                <label for="guy4">abc4</label><br />
+                            </div>
+                            <div class="rad">
+                                <input type="radio" id="guy1" class="list-group-item" name="guy1" value="abc5" />
+                                <label for="guy5">abc5</label><br /><br />
+                            </div>                    
+                        </div>
+                        <button
+                            id="Done"
+                            style="padding:5px;"
+                            onclick="showTeam()"
+                        >
+                            Done</button
+                        ><br /><br>
+                    </div>
+                    <input
+                        type="button"
+                        id="joinTeam"
+                        name="answer"
+                        style="font-weight: 700"
+                        value="JOIN"
+                        onclick="showDiv()"
+                    />
+                    <div id="show-team" style="display:none;">
+                        <div id="popup">
+                            <h2 id="heading">Team  </h2><br>
+                              <h4>Captain name:  Hrithvika</h4><br>
+                              <h4>Date of match:  ---</h4><br>
+                              <h4>Timings of match:  --:--</h4><br>                             
+                              <button type="submit" class="btn" onclick="alert('You have joined the team!')">Join</button>
+                              <button type="button" class="cancel" onclick="closeTeam()">Close</button>
+                        
+                        </div>
+                    </div>                    
+                </div>
             </div>
-            <button id="Done" style="padding:5px;" onclick="showTeam()">Done</button><br>
-          </div>
 
-          <div id="show-team" style="display:none;">
-            <h3>Team abc</h3>
-            <p>LALA</p>
-
-          </div>
-
-
-
-
-
-
-        <!-- <div class="bookdirect">
+            <!-- <div class="bookdirect">
             <h3>Already have a team?  Book your ground here!</h3> 
             <a href="book.html"><button style="font-weight: 700" id="bookfont">BOOK</button></a>
             <br><br><br>     
@@ -91,26 +126,9 @@
             
         </div>
          -->
-    </main>
+        </main>
 
-    <script type="text/javascript">
-        const showDivJoin = () => {
-            document.getElementById('disp').style.display = "block";
-            document.getElementById('joinTeam').style.display = "none";
-        }
-
-        const showTeam = () => {
-            document.getElementById('show-team').style.display = "block";
-           // document.getElementById('disp').style.display = "none";
-        }
-
-        const showDivCreate = () => {
-            document.getElementById('create').style.display = "block";
-            document.getElementById('createTeam').style.display = "none";
-        }
-
-    </script>
-
-    
-</body>
+        <script src="script_foot.js"></script>
+       
+    </body>
 </html>

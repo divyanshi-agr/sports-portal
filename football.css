@@ -1,65 +1,16 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    font-family: 'Slabo 27px', serif;
-    
+body {
+    font-family: "Slabo 27px", serif;
 }
 
-main{
+main {
     margin: 20px;
 }
 
-
-/* .navbar{
-    
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-}
-
-ul{
-    list-style: none;
-    font-family: 'Roboto Condensed', sans-serif;   
-    text-transform: uppercase;
-    display: flex;
-
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    transition: all 0.6s;
-   
-}
-
-a:hover{
-    color: #706c61;
-   
-}
-
-a:active{
-    text-decoration: none;
-}
-
-li{ 
-    padding: 25px;
-}
-
-hr{
-    border: none;
-    border-left: 1px solid rgba(255,255,255,0.5);
-    height: 25px;
-    width: 1px;
-    margin-top: 20px;
-} */
 
 .split {
     height: 100%;
@@ -69,51 +20,171 @@ hr{
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  .left {
+}
+
+/* Control the left side */
+.left {
     left: 0;
     background-color: #111;
     color: white;
-  }
-  
-  /* Control the right side */
-  .right {
+}
+
+/* Control the right side */
+.right {
     right: 0;
     background-color: white;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  #createTeam {
-      border-radius: 15px;
-      padding: 12px;
-      border-color: white;
-      background-color: black;
-      color: white
-  }
+}
 
-  #joinTeam {
+#createTeam {
+    border-radius: 15px;
+    padding: 12px;
+    border-color: white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#joinTeam {
     border-radius: 15px;
     padding: 12px;
     border-color: black;
     background-color: white;
     color: black;
-  }
+    cursor: pointer;
+}
 
-  #show-team {
-      box-sizing: border-box;
-      border-color: black;
-      border-radius: 5px;
-      background-color: chocolate;
-    
-  }
+#show-team {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top:  100%;
+    transform: translate(-45%,5%);
+    border: 2px solid #666;
+    z-index: 9;
+    box-shadow: black 2px 2px 6px;
+}
 
+#disp1{
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    left: 50%;
+    top:  100%;
+    transform: translate(-45%,5%);
+    border: 2px solid #666;
+    z-index: 9;
+    box-shadow: 3px;
+}
+
+#disp1 input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    width: 80%;
+    color: white;
+    border-bottom: 1.5px solid palevioletred;
+
+}
+
+#disp1 label {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btnc {
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: rgb(43, 223, 43);
+    cursor: pointer;
+}
+
+.btnc:hover {
+    background-color: rgb(8, 170, 8);
+
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: rgb(43, 223, 43);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(8, 170, 8);
+
+}
+
+.cancel {
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    background-color: rgb(235, 64, 64);
+}
+
+#guy1 {
+    /* box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 10px;
+    border-bottom: 10px black; */
+    border: 1px solid black; /* Add a thin border to each list item */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: palevioletred; /* Add a grey background color */
+  padding: 12px; /* Add some padding */
+}
+
+.inp {
+    padding: 10px;
+}
+
+#popup {
+    padding: 20px;
+    width: 80%;
+}
+
+h4 {
+    align-self: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.rad {
+    padding: 5px;
+}
+
+#heading {
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
